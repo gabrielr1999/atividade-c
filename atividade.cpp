@@ -1,75 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "Funcionario.h"
+#include "Retangulo.h"
+#include "Pessoa.h"
+#include "Funcionarioo.h"
 
 int numero;
-
-class Pessoa
-{
-	public:
-		char nome;
-		int idade;
-};
-
-class Funcionario
-{
-	public:
-		char nome;
-		float salario;
-};
-
-class Retangulo
-{
-	public:
-		float largura;
-		float altura;
-		
-		float area() {
-			return largura * altura;
-		}
-		float perimetro() {
-			return 2 *(largura + altura);
-		}
-		float diagonal() {
-			return sqrt((largura * largura)+(altura * altura));
-		}
-
-};
-
-class Funcionarioo
-{
-	public:
-		char nome;
-		float SalarioBruto;
-		float imposto; 
-		float porcentagem;
-		
-		float SalarioLiquido() {
-			return SalarioBruto - imposto;
-		}
-		float AumentarSalario() {
-			return (porcentagem * SalarioLiquido()+SalarioLiquido());
-		}
-
-};
-
-class Aluno
-{
-	public:
-		char nome;
-		float nota1, nota2,nota3;
-		
-		float NotaFinal() {
-			return nota1 + nota2 + nota3;
-		}
-		float reprovado() {
-			if (NotaFinal() < 60.00) {
-				return 60.00 - NotaFinal();
-			} else {
-				return 0.0;
-			}
-		}
-};
 
 int main(int argc, char *argv[])
 {
