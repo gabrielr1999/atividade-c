@@ -5,6 +5,7 @@
 #include "Retangulo.h"
 #include "Pessoa.h"
 #include "Funcionarioo.h"
+#include "Aluno.h"
 
 int numero;
 
@@ -46,7 +47,7 @@ int main(int argc, char *argv[])
 				printf("\nPeesoa mais velha e: %s\n\n1", &pessoa1.nome);
 			}else
 			{
-				printf("\nPeesoa mais velha e: %s\n\n", &pessoa2.nome);
+				printf("\nPessoa mais velha e: %s\n\n", &pessoa2.nome);
 			}
 			
 			break;
@@ -110,7 +111,7 @@ int main(int argc, char *argv[])
 			printf("\nDigite a porcentagem para aumentar o salario:");
 			scanf("%f", &funcionario.porcentagem);
 			
-			printf("\Dados atualizados: %s,%-5.2f\n\n", &funcionario.nome, funcionario.AumentarSalario());
+			printf("\nDados atualizados: %s,%-5.2f\n\n", &funcionario.nome, funcionario.AumentarSalario());
 			
 			break;
 		
